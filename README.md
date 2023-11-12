@@ -55,3 +55,7 @@ Evil Portals is distributed under the GNU GENERAL PUBLIC LICENSE v3. See [LICENS
 Some of the portals here are also available for [Wifiphisher](https://github.com/wifiphisher/wifiphisher), available here [wifiphisher/extra-phishing-pages](https://github.com/wifiphisher/extra-phishing-pages)
 
 Discussion thread - [Hak5 Forums](https://forums.hak5.org/index.php?/topic/39856-evil-portals/)
+
+## Modified version
+Almost same portals from parent repo.
+But th website is translated in Japanese.
